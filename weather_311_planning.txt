@@ -14,9 +14,15 @@ Weather data:
 	
 	NYC pretty much all the same temperature/weather? Check this. Could take average for all of NYC
 	for single day (at least initially).
+
+	Implementation plan: Make an array (or column in new df) of all dates of interest. For loop through and select
+	all weather stations in NYC at current date. Probably average results (at least for initial pass where I'm not
+	taking spatial variation into account).
 	
 311 call data:
 	Mostly just interested in volume (number) of calls each day. Group and sum number of calls per day.
+	Implementation plan: Make an array (or column in new df) of all dates of interest. For loop through and select
+	all calls between current and next date in array.
 	
 	Could go back to investigate how reports to different departments vary with weather (ex: more sanitation
 	complaints during hot summer than during winter or something).
@@ -27,7 +33,7 @@ Weather data:
 Modeling plan:
 	Initially average all weather data per day across only NYC. (Could do by borough or something later)
 	Sum all calls per day across NYC.
-	Join these two tables/dataframes
+	Join these two tables/dataframes. Check that dates match.
 	
 	Features: Mean temperature, dew point (or derived humidity variable), 
 		rainfall, snowfall, day of week?, etc.
