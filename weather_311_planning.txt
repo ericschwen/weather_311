@@ -1,0 +1,40 @@
+Weather-311 project planning
+Author: Eric Schwen
+Date: 6/2/23
+
+Weather data: 
+	Mean temperature, max temp, and min temp are certainly strongly colinear. Maybe just look at
+	mean temp (or otherwise account for colinearity)
+	
+	Dew Point is closely related to humidity, which accounts for how hot it feels. Maybe engineer
+	a more relevant variable than just dew point.
+	
+	Restrict to just NYC for analysis. Can just use latitude and longitude max and min from NYC data
+	to slice to only that region.
+	
+	NYC pretty much all the same temperature/weather? Check this. Could take average for all of NYC
+	for single day (at least initially).
+
+	Implementation plan: Make an array (or column in new df) of all dates of interest. For loop through and select
+	all weather stations in NYC at current date. Probably average results (at least for initial pass where I'm not
+	taking spatial variation into account).
+	
+311 call data:
+	Mostly just interested in volume (number) of calls each day. Group and sum number of calls per day.
+	Implementation plan: Make an array (or column in new df) of all dates of interest. For loop through and select
+	all calls between current and next date in array.
+	
+	Could go back to investigate how reports to different departments vary with weather (ex: more sanitation
+	complaints during hot summer than during winter or something).
+	
+	Complaints likely vary with day of week (more or fewer on weekends for example). Could have day of
+	week as an input to model.
+	
+Modeling plan:
+	Initially average all weather data per day across only NYC. (Could do by borough or something later)
+	Sum all calls per day across NYC.
+	Join these two tables/dataframes. Check that dates match.
+	
+	Features: Mean temperature, dew point (or derived humidity variable), 
+		rainfall, snowfall, day of week?, etc.
+	Output: Number of 311 calls (in day)
