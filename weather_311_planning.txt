@@ -46,12 +46,16 @@ To Do:
 	Can find out which agencies or complaint types are most common.
 	Then count these complaint types daily and see if they vary with time or season.
 
-	Regularization of sklearn linear model. Am I doing this yet? No. Would need to use ridge or lasso.
+	Regularization of sklearn linear model. Would need to use ridge or lasso.
+	Done, but parameters not played with much. Maybe return to.
 
-	Add more model terms.
+	Go back to weather data I dropped for not being averageable floats?
 
 	Maybe delete modelling where I wasn't using train, CV, test.
 
 	Predictions.
+	Error bars on predictions.
 
 	Look up what specific events were that made big spikes.
+
+	Maybe try throwing into decision tree.
