@@ -38,3 +38,20 @@ Modeling plan:
 	Features: Mean temperature, dew point (or derived humidity variable), 
 		rainfall, snowfall, day of week?, etc.
 	Output: Number of 311 calls (in day)
+
+
+
+To Do:
+	Explore 311 data more. Counts of nubmer of calls main department/agency or number of calls for each type of complaint.
+	Can find out which agencies or complaint types are most common.
+	Then count these complaint types daily and see if they vary with time or season.
+
+	Regularization of sklearn linear model. Am I doing this yet? No. Would need to use ridge or lasso.
+
+	Add more model terms.
+
+	Maybe delete modelling where I wasn't using train, CV, test.
+
+	Predictions.
+
+	Look up what specific events were that made big spikes.
