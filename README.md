@@ -4,8 +4,13 @@ Weather and 311 calls data science case study
 This project eplores two public datasets: 311 calls in New York City and NOAA weather reports from across New York state. The main goals are
 to explore and characterize these datasets and then build a model to predict daily 311 calls for the next week.
 
+My main aim in completing this project is to show my thought process and methodology in working though this style of project involving
+large, messy datasets. The jupyter notebooks in this project therefore include the intermediate steps I took in exploring, analyzing,
+and modeling the data.
+
 I had a timeframe of a couple of days to work on this case study, so the data exploration and modeling is largely restricted to
-relatively quick analysis.
+relatively quick analysis. There are a number of locations where I have noted ideas that I would further explore if I were to
+work on this project further.
 
 The full datasets used for this project are not included in this repository, but they are publicly available. The 311 call data can be found
 at https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9. The weather data can be found at
