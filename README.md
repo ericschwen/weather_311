@@ -25,8 +25,10 @@ daily call count modeling.
 for use in daily call count modeling.
 
 **311_weather_modeling.ipynb** combines the two datasets and builds a linear regression model (with some polynomial terms) to predict
-daily call counts for the next week. I have left my exploratory modeling steps in this file in order to show my thought process in working
-through this project.
+daily call counts for the next week. I chose to use linear regression because it is a powerful tool which produces interpretable models and
+interpretability was a key consideration for this demonstration project. An autoregressive model could certainly also make sense for predicting
+daily call counts, though it would be more appropriate for shorter timescale predictions and an applicable model would have to be chosen to
+include the exogenous weather data.
 
 **weather_311_presentation_final.pdf** is my presentation slides explaining the results of this project.
 
